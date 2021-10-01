@@ -9,6 +9,10 @@ import android.widget.Button;
 /**
  * MainActivity: Calls the various methods to create and display the puzzle on the device
  * Creates the array of button objects and their listener, same with the reset button
+ *
+ * Enhancement 1: I changed and added several methods that check during play if some buttons
+ * are already in their correct positioning, they are identified with red button backgrounds
+ *
  * @author annayrjanson
  */
 

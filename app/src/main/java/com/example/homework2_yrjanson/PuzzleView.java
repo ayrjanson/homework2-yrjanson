@@ -62,6 +62,7 @@ public class PuzzleView{
     /**
      * resetPuzzle: calls genPuzzle() and sets the text for the display buttons accordingly.
      * Also resets the background colors
+     * Enhancement: Always resets the button colors back to black at the start of every reset
      */
 
     public void resetPuzzle() {

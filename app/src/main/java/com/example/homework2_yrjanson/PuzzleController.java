@@ -120,7 +120,7 @@ public class PuzzleController implements View.OnClickListener{
             case R.id.reset:
                 // Resets the puzzle array
                 pView.resetPuzzle();
-                // Checks if the puzzle is correct initially
+                // Checks if the puzzle is initially randomized to the solution
                 allTrue = confirmPuzzle();
                 // If initial puzzle true, displays all the buttons as green
                 if(allTrue) displayAllCorrect();
@@ -130,6 +130,7 @@ public class PuzzleController implements View.OnClickListener{
 
     /**
      * confirmPuzzle: Determines how many numbers are in the correct location
+     * Enhancement: Turns colors red or black based on if the numbers are in the correct location
      * @return: If the pArray and solArray are identical
      */
 
@@ -159,6 +160,8 @@ public class PuzzleController implements View.OnClickListener{
     /**
      * displayAllCorrect: Displays all buttons with green text if all pView and solutionView
      * items are identical
+     * Enhancement: Displays a complementary color (green)to the tracker colors (red) to solidify
+     * that the user correctly executed the puzzle
      */
 
     public void displayAllCorrect() {

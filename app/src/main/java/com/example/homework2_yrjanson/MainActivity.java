@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity{
 
     /**
      * onCreate: Creates the PuzzleView and PuzzleController; used to display the puzzle
+     * Enhancement: Determines if initial puzzle has pieces already in place
      */
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,9 @@ public class MainActivity extends AppCompatActivity{
 
         // Creates an array list of buttons that can be accessed by the controller
         setArrayList(puzzle, puzzleController);
+
+        // Checks if any buttons are initially in correct spot
+        puzzleController.confirmPuzzle();
 
         // Creates a reset button to randomize the puzzle again and set the arrays accordingly
         Button resetButton = findViewById(R.id.reset);
